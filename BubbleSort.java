@@ -2,8 +2,8 @@ import java.util.Arrays;
 public class BubbleSort {
     /* This is a stable sorting algorithm
     This is sorting the array in Ascending order
-     * This is one of the sorting algorithm
-     * To check if the array is not swapped then stop the sorting process
+    This can be done by the approach by swapping the adjacent elements
+    Time Complexity->Worst case-O(N^2) and Best Case-O(N)
      */
    
     public static void main(String[] args) {
@@ -13,6 +13,7 @@ public class BubbleSort {
       
     }
     static void bubble(int[] arr){
+        // For checking the array is swapped or not
         boolean swapped;
         int n=arr.length;
         for(int i=0;i<=n-1;i++){
@@ -25,6 +26,7 @@ public class BubbleSort {
                     swapped=true;
                 }
             }
+            // This will break the inner loop if swapping is not done
             if(!swapped){
                 break;
             }
